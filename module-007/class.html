@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class is a templete</title>
+</head>
+<body>
+
+  <script>
+        class User {
+      constructor(firstName, lastName, userHobbies) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userHobbies = userHobbies;
+      }
+      getFullName = () => {
+        return `${this.firstName} ${this.lastName}`;
+
+      }
+    }
+    let Monica = new User("Monica", "Chisim", ["Football]", "Cricket"]);
+    console.log(Monica.getFullName);
+
+    let Babu = new User("Babu", "Nokrek", "Coding");
+    console.log("Babu: ", Babu);
+
+
+
+
+  </script>
+  
+</body>
+</html>
