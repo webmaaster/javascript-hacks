@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class is a templete</title>
+</head>
+<body>
+
+  <script>
+        class User {
+      constructor(firstName, lastName, userHobbies) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userHobbies = userHobbies;
+      }
+      getFullName = () => {
+        return `${this.firstName} ${this.lastName}`;
+
+      }
+    }
+
+    class AdminUser extends User {
+      setPassword = (setPassword) => {
+        this.password = password;
+
+      }
+    }
+
+
+
+
+
+    let Monica = new User("Monica", "Chisim", ["Football]", "Cricket"]);
+    console.log(Monica);
+
+    let Babu = new AdminUser("Babu", "Nokrek", "Coding");
+    console.log(Babu);
+
+
+
+
+  </script>
+  
+</body>
+</html>
